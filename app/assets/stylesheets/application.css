@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  font-family: "Raleway" !important;
+  font-weight: 200 !important;
+  margin: 0;
+ }
+
+ body, html {
+  height: 100% !important;
+ }

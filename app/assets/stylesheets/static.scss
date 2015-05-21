@@ -1,3 +1,82 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// VARIABLES
+
+$bg: #FAFAFA;
+$navbar: #2E2E2E; 
+$blue: #3498db;
+
+// END VARIABLES
+
+.wrapper {
+  background-color: $bg;
+  min-height: 100% !important;
+  margin: 0 auto -55px;
+}
+
+.PBPnavbar {
+  min-height: 125px !important;
+  background-color: $navbar;
+  border-bottom: 1px solid darken($navbar, 20%);
+  h3 {
+    margin: 0px;
+    padding: 0px;
+    line-height: 100px !important;
+    color: white !important;
+  }
+  .PBPbrand {
+    margin-bottom: 35px !important;
+    margin-top: 35px !important;
+    a {
+      color: white;
+      .blue {
+        color: $blue;
+      }
+      &:hover {
+        text-decoration: none;
+        color: darken(white, 25%);
+        .blue {
+          color: darken($blue, 25%);
+        }
+      }
+    }
+  }
+  .navlink {
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  .header-top {
+    border-bottom: 1px solid white;
+  }
+  .emphasis {
+    color: darken(white, 40%);
+  }
+}
+
+.footer, .push {
+  bottom: 0px !important;
+  height: 55px;
+}
+
+.footer {
+  position: fixed;
+  width: 100% !important;
+  background-color: $navbar;
+  padding-top: 5px;
+  .soc-links {
+    letter-spacing: 25px;
+    text-align: center;
+    margin: 0px !important;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+}
+

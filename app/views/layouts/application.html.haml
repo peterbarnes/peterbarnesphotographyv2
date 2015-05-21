@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Peter Barnes Photography
+    %link{ href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', rel: 'stylesheet' }
+    %link{ href: 'http://fonts.googleapis.com/css?family=Raleway:400,200', rel: 'stylesheet', type: 'text/css' }
+    %link{ href: "/monosocialiconsfont-master/sample project/stylesheets.css", rel: "stylesheet" }
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    %script{ src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' }
+    = csrf_meta_tags
+  %body
+    .wrapper
+      = render 'layouts/header'
+      .container-fluid
+        = yield
+    = render 'layouts/footer'
+    

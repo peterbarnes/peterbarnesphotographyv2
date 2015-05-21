@@ -16,11 +16,15 @@ class StaticController < ApplicationController
     
   end
 
-  def process
+  def theprocess
     
   end
 
   def contact
+    
+  end
+
+  def pricing
     
   end
 
