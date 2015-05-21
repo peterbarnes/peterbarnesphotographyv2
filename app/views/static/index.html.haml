@@ -1,3 +1,36 @@
 .row
+  %a.big-link{ href: '/events' }
+    .col-md-12.events
+      %h1.text-center EVENTS
+  %a.big-link{ href: '/landscape' }
+    .col-md-12.landscape
+      %h1.text-center LANDSCAPE
+  %a.big-link{ href: '/portraiture' }
+    .col-md-12.portraiture
+      %h1.text-center PORTRAITURE
+.row
   .col-md-12
-    %h1 index
+    = image_tag('me.png', size: '225x225', class: 'img-responsive img-circle center-block')
+  .col-md-6.col-md-offset-3.about
+    %h3.text-center.thick-line Hi!  I'm Peter Barnes, a photographer based out of Lincoln, Nebraska with a passion of conveying emotion and depth through the medium of photography.
+    %h3.text-center.thick-line
+      I specialize in 
+      %span
+        %a.emphasis{ href: '/events' } EVENT
+      ,
+      %span
+        %a.emphasis{ href: '/landscape' } LANDSCAPE
+      ,
+      and
+      %span
+        %a.emphasis{ href: '/portraiture' } PORTRAIT
+      photography, and deliver the highest quality images to my clients.
+    %h3.text-center.thick-line 
+      I always make sure that convienence, quality, and flexibility are my top priorities.
+    %h3.text-center.thick-line.bottom 
+      To see what it's like to have a photoshoot with me, head over to 
+      %span
+        %a.emphasis{ href: '/theprocess' } THE PROCESS
+      for more details!
+
+

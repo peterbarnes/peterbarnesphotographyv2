@@ -4,16 +4,23 @@
 
 // VARIABLES
 
-$bg: #FAFAFA;
+$bg: #2E2E2E;
 $navbar: #2E2E2E; 
 $blue: #3498db;
 
 // END VARIABLES
 
+a {
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
 .wrapper {
   background-color: $bg;
   min-height: 100% !important;
-  margin: 0 auto -55px;
+  margin: 0 auto -54px;
 }
 
 .PBPnavbar {
@@ -49,18 +56,23 @@ $blue: #3498db;
       text-decoration: none;
       color: $blue;
     }
+    font-size: 22px !important;
   }
   .header-top {
     border-bottom: 1px solid white;
   }
   .emphasis {
-    color: darken(white, 40%);
+    color: $blue !important;
+    &:hover {
+      text-decoration: none !important;
+      color: darken($blue, 25%) !important;
+    }
   }
 }
 
 .footer, .push {
   bottom: 0px !important;
-  height: 55px;
+  height: 54px;
 }
 
 .footer {
@@ -80,3 +92,58 @@ $blue: #3498db;
     }
 }
 
+.pad-for-footer {
+  margin-bottom: 54px;
+}
+
+.no-pad {
+  padding: 0px;
+}
+
+.big-link {
+  color: white;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.events {
+  background-image: url('/eventsbg.png');
+  height: 478px !important;
+  h1 {
+    line-height: 438px;
+  }
+  margin-bottom: 54px;
+}
+
+.landscape {
+  background-image: url('/landscapebg.png');
+  height: 478px !important;
+  h1 {
+    line-height: 438px;
+  }
+  margin-bottom: 54px;
+}
+
+.portraiture {
+  background-image: url('/portraiturebg.png');
+  height: 478px !important;
+  h1 {
+    line-height: 438px;
+  }
+  margin-bottom: 54px;
+}
+
+.about {
+  h3 {
+    color: white;
+  }
+}
+
+.thick-line {
+  line-height: 40px;
+}
+
+.bottom {
+  margin-bottom: 54px;
+}
