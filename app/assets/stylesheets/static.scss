@@ -11,8 +11,10 @@ $blue: #3498db;
 // END VARIABLES
 
 a {
+  color: $blue;
   text-decoration: none !important;
   &:hover {
+    color: white;
     text-decoration: none !important;
   }
 }
@@ -26,7 +28,7 @@ a {
 .PBPnavbar {
   min-height: 125px !important;
   background-color: $navbar;
-  border-bottom: 1px solid darken($navbar, 20%);
+  border-bottom: 1px solid darken(white, 50%);
   h3 {
     margin: 0px;
     padding: 0px;
@@ -43,9 +45,9 @@ a {
       }
       &:hover {
         text-decoration: none;
-        color: darken(white, 25%);
+        color: $blue !important;
         .blue {
-          color: darken($blue, 25%);
+          color: white !important;
         }
       }
     }
@@ -65,7 +67,7 @@ a {
     color: $blue !important;
     &:hover {
       text-decoration: none !important;
-      color: darken($blue, 25%) !important;
+      color: white !important;
     }
   }
 }
@@ -108,7 +110,7 @@ a {
 }
 
 .events {
-  background-image: url('/eventsbg.png');
+  background-image: url('/eventsbg.jpg');
   height: 478px !important;
   h1 {
     line-height: 438px;
@@ -117,7 +119,7 @@ a {
 }
 
 .landscape {
-  background-image: url('/landscapebg.png');
+  background-image: url('/landscapebg.jpg');
   height: 478px !important;
   h1 {
     line-height: 438px;
@@ -126,7 +128,7 @@ a {
 }
 
 .portraiture {
-  background-image: url('/portraiturebg.png');
+  background-image: url('/portraiturebg.jpg');
   height: 478px !important;
   h1 {
     line-height: 438px;
@@ -157,3 +159,26 @@ a {
   margin-top: 45px !important;
   margin-bottom: 45px !important;
 }
+
+.header2 {
+  margin: 0px !important;
+  margin-top: 45px !important;
+  margin-bottom: 10px !important;
+}
+
+.subheader {
+  margin: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 45px !important;
+  color: darken(white, 25%) !important;
+}
+
+.big-line {
+  line-height: 35px;
+}
+
+.blue {
+  color: $blue !important;
+}
+
+
