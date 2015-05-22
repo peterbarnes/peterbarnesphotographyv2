@@ -13,6 +13,7 @@ $blue: #3498db;
 a {
   color: $blue;
   text-decoration: none !important;
+  transition: color 175ms ease-out;
   &:hover {
     color: white;
     text-decoration: none !important;
@@ -42,6 +43,7 @@ a {
       color: white;
       .blue {
         color: $blue;
+        transition: color 400ms ease-out;
       }
       &:hover {
         text-decoration: none;
@@ -50,10 +52,12 @@ a {
           color: white !important;
         }
       }
+      transition: color 400ms ease-out;
     }
   }
   .navlink {
     color: white;
+    transition: color 175ms ease-out;
     &:hover {
       text-decoration: none;
       color: $blue;
@@ -65,6 +69,7 @@ a {
   }
   .emphasis {
     color: $blue !important;
+    transition: color 175ms ease-out;
     &:hover {
       text-decoration: none !important;
       color: white !important;
@@ -107,6 +112,7 @@ a {
   &:hover {
     color: $blue;
   }
+  transition: color 500ms ease-out;
 }
 
 .events {
