@@ -32,7 +32,7 @@ a {
   h3 {
     margin: 0px;
     padding: 0px;
-    line-height: 100px !important;
+    line-height: 100px;
     color: white !important;
   }
   .PBPbrand {
@@ -188,4 +188,31 @@ a {
 
 .big-symbol {
   font-size: 100px !important;
+}
+
+@media all and (max-width: 990px) {
+  .PBPnavbar {
+    h3, a {
+      line-height: 35px !important;
+    }
+    .first {
+      margin-top: 20px !important;
+    }
+  }
+  .footer, .push {
+    height: 70px !important;
+  }
+
+  .footer {
+    .soc-links {
+      letter-spacing: 25px !important;
+      font-size: 30px;
+      .symbol {
+        font-size: 40px;
+      }
+    }
+  }
+  .no-pad {
+    padding: 10px;
+  }
 }
