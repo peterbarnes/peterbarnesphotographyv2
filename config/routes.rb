@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   match '/theprocess',  to: 'static#theprocess',  via: 'get'
   match '/contact',     to: 'static#contact',     via: 'get'
   match '/pricing',     to: 'static#pricing',     via: 'get'
+  match '/seniors',     to: 'static#seniors',     via: 'get'
 end

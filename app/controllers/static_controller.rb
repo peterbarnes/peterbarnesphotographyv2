@@ -28,4 +28,8 @@ class StaticController < ApplicationController
     
   end
 
+  def seniors
+    
+  end
+
 end
