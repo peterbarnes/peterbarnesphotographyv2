@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   match '/portraiture', to: 'static#portraiture', via: 'get'
   match '/theprocess',  to: 'static#theprocess',  via: 'get'
 
-  match '/contacts',     to: 'contacts#new',      via: 'get'
+  match '/contact',     to: 'contacts#new',      via: 'get'
   resources "contacts", only: [:new, :create]
 
   match '/pricing',     to: 'static#pricing',     via: 'get'
