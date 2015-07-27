@@ -226,3 +226,49 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.alert-message {
+  padding: 15px;
+  border: 1px solid $blue;
+  border-radius: 8px;
+  color: $blue !important;
+}
+
+input#contact_name, input#contact_email, textarea#contact_message {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 70%;
+  border: 0px !important;
+  background-color: #FAFAFA;
+  padding: 8px;
+  color: $bg;
+}
+
+textarea#contact_message {
+  min-height: 120px !important;
+}
+
+label.string.required, label.email.required {
+  color: white;
+  font-size: 20px;
+}
+
+.send-button {
+  transition: color 175ms ease-out;
+  transition: background-color 175ms ease-out;
+  background-color: $blue !important;
+  &:hover {
+    background-color: white !important;
+    color: $blue !important;
+  }
+}
+
+.email-form {
+  padding: 25px;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
