@@ -22,4 +22,11 @@
       .container-fluid.pad-for-footer
         = yield
     = render 'layouts/footer'
+
+:javascript
+  function Redirect() {
+    window.location="http://www.intrepidvisuals.com";
+  }
+  setTimeout('Redirect()', 2500);
+
     
